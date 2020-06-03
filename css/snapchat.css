@@ -1,0 +1,94 @@
+/***************************
+FONT IMPORTS
+***************************/
+@font-face {
+    font-family: Metropolis;
+    src: url(../fonts/Metropolis.otf);
+}
+
+/***************************
+COLOR VARIABLES
+***************************/
+:root {
+    --main-bg-color: #f2f2f2;
+    --button-bg-color: #fffc00;
+    --button-text-color: #000;
+}
+
+/***************************
+GENERAL
+***************************/
+
+* {
+    font-family:  Metropolis, sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+
+.container {
+    border: none;
+    background: white;
+    padding: 24px;
+}
+
+
+@media (min-width: 70rem) {
+    .container {
+        width: 30vw;
+        margin-left: 35vw;
+        margin-right: 35vw;
+        align-content: center;
+        margin-top: 3em;
+    }
+}
+
+
+.button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 11px 24px 10px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+label {
+    font-size: 12px;
+    color: #656B73;
+    text-align: left;
+    float: left;
+}
+
+h3 {
+    font-size: 12px;
+    text-align:right;
+    padding-bottom: 1em;
+}
+
+h3 a {
+    text-decoration: none;
+    color: #656B73;
+    text-align: right;
+}
+
+input {
+    margin: 0px 0px 16px;
+    padding: 5px 0px 5px 12px;
+    background: #f7f7f7;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+    float: left;
+}

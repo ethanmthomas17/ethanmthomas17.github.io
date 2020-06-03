@@ -1,0 +1,176 @@
+/***************************
+FONT IMPORTS
+***************************/
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: ProductSans;
+    src: url(../fonts/ProductSans.ttf);
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+/***************************
+COLOR VARIABLES
+***************************/
+:root {
+    --main-bg-color: #ffffff;
+    --button-bg-color: #1a73e8;
+    --button-text-color: #ffffff;
+    --button-bg-hover-color: #4285f4;
+    --button-text-hover-color: #ffffff;
+}
+
+/***************************
+GENERAL
+***************************/
+
+* {
+    font-family:  Roboto, ProductSans, sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+.light {
+    font-family: RobotoLight;
+    font-weight: 600;
+}
+
+.medium {
+    font-weight: 300;
+}
+
+.google-container {
+    align-self: center;
+    border: solid 0.05em;
+    border-color: #d8d8d8;
+    border-radius: 10px;
+    padding: 48px 40px 36px;
+    height: auto;
+    min-height: 500px;
+    overflow-y: auto;
+    display: block;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@media (min-width: 70rem) {
+    .google-container {
+        width: 30vw;
+        margin-left: 35vw;
+        margin-right: 35vw;
+        align-content: center;
+        margin-top: 10em;
+    }
+}
+
+.margin-top-0 {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.blue-link a {
+    color: #1a73e8;
+}
+
+
+.google-font {
+    font-family: ProductSans;
+    font-weight: 500;
+}
+
+.blue {
+    color: #4285f4;
+}
+
+.red {
+    color: #ea4335;
+}
+
+.yellow {
+    color: #fbbc05;
+}
+
+.green {
+    color: #34a853;
+}
+
+.blue-link a {
+    text-decoration: none;
+}
+
+.floatleft {
+    text-align: left;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.column2 {
+    width: 50%;
+    display: inline-block;
+    float: left;
+}
+
+
+.black {
+    color: #191919;
+}
+
+input {
+    padding: 12px 14px;
+    margin: 2px 2px 0px;
+    width: 90%;
+    color: #202124;
+    text-align: left;
+    font-size: 16px;
+}
+
+.margin-bottom {
+    margin-bottom: 2em;
+}
+
+/***************************
+BUTTON STYLING
+***************************/
+.button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 0.5em 2em;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.button-padding {
+    padding-top: 0.5em;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    background: var(--button-bg-hover-color);
+    color: var(--button-text-hover-color);
+}
