@@ -1,0 +1,534 @@
+/***************************
+FONT IMPORTS
+***************************/
+@font-face {
+    font-family: Lobster;
+    src: url(../fonts/Lobster.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway.ttf);
+}
+
+
+/***************************
+COLOR VARIABLES
+***************************/
+:root {
+    --main-bg-color: #e4e4e4;
+
+    /* NAVIGATION/BANNER COLORS */
+    --nav-text-color: #ffffff;
+    --nav-text-hover-color: #BBB;
+
+    /*BUTTON COLORS*/
+    --button-bg-color: #e84545;
+    --button-text-color: white;
+    --button-bg-hover-color: #c75757;
+    --button-text-hover-color: #b5b5b5;
+}
+
+/***************************
+GENERAL
+***************************/
+
+* {
+    margin:  0;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    font-family:  Raleway, sans-serif;
+    vertical-align: top;
+    font-weight: 100;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+}
+
+
+/***************************
+NAVIGATION
+***************************/
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-content: center;
+}
+
+.navigation li {
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+.navigation li a:hover, .dropdown:hover .dropbtn {
+    color: var(--nav-text-hover-color);
+}
+
+.navigation li a {
+    display: inline-block;
+    color: var(--nav-text-color);
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (max-width: 70rem)
+{
+
+    .navigation li a {
+        padding: 1em 0.6em;
+    }
+}
+
+@media (min-width: 70rem) {
+    .navigation li a {
+        padding: 1em 1.5em;
+    }
+}
+
+@media (max-width: 70rem)
+{
+
+    .navigation {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 70rem) {
+    .navigation {
+        font-size: 1.2em;
+        float: left;
+        margin-left: 1.5em;
+    }
+}
+
+
+/***************************
+BANNER
+***************************/
+
+.banner {
+    background-color: #882020;
+    background-image: url(../images/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+
+div.banner {
+    display: inline-block;
+}
+
+.bannerhome
+{
+    background-image: none;
+    background-color: #882020;
+}
+
+/***************************
+IMAGES
+***************************/
+
+.icon {
+    height: 5em;
+    margin: 0.5em;
+}
+
+.optimistlogo {
+    border: gray solid 0.2em;
+    background-color: white;
+    padding: 0.3em;
+}
+
+@media (min-width: 70rem) {
+    .home-optimistlogo {
+        width: 8em;
+    }
+}
+
+@media (max-width: 70rem) {
+    .home-optimistlogo {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.sponsor-optimistlogo {
+    width: 20%;
+}
+
+.sponsor-icon-middle {
+    width: 40%;
+}
+
+.sponsor-icon-big {
+    width: 90%;
+}
+
+.sponsor-icon {
+    border: gray solid 0.2em;
+    margin-top: 1em;
+}
+
+.photo {
+    width: 90%;
+    margin: 1em;
+}
+
+@media (min-width: 70rem) {
+    .thumbnail {
+        width: 35%;
+        margin: 1em;
+    }
+}
+
+@media (max-width: 70rem) {
+    .thumbnail {
+        width: 70%;
+        margin: 1em;
+    }
+}
+
+.caption {
+    margin-top: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/***************************
+BOX/DIV/MARGIN/PADDING Formatting
+***************************/
+
+.no-margin-top {
+    margin-top: 0;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+.margin-top {
+    margin-top: 1em;
+}
+
+.margin-bottom {
+    margin-bottom: 1em;
+}
+
+.margin-top-small {
+    margin-top: 0.3em;
+}
+
+.margin-bottom-small {
+    margin-bottom: 0.3em;
+}
+
+.padding-top {
+    padding-top: 1em;
+}
+
+.padding-bottom {
+    padding-bottom: 1em;
+}
+
+@media (min-width: 70rem) {
+    .hidden-over-70 {
+        display: none;
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+@media (max-width: 70rem) {
+    .hidden-under-70 {
+        display: none;
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+
+/***************************
+VIDEOS
+***************************/
+.video {
+    margin: 1em;
+}
+
+@media (min-width: 70rem) {
+    .video {
+        margin: 1em;
+        width: 50vw;
+        height: 25vw;
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+}
+
+@media (max-width: 70rem) {
+    .video {
+        width: 90vw;
+        height: 45vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
+
+iframe { /*If you want to change size of video, do so in .video not iframe */
+    width: 550px;
+    height: 281px;
+    width: 100%;
+    height: 100%;
+}
+
+/***************************
+HERO FORMATTING
+***************************/
+
+.herocontent {
+    padding-top: 2em;
+}
+
+#mainpage {
+    min-height: 100vh;
+    background-color: #882020;
+    background-image: url(../images/hero-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.green-background {
+    background-image: url(../images/SponsorsThanks.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/***************************
+TEXT FORMATTING
+***************************/
+
+strong {
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+h5 {
+    margin-bottom: 0.2em;
+    margin-top: 0.4em;
+}
+
+p {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+@media (min-width: 70rem) {
+    h1 {
+        font-size: 5em;
+    }
+
+    h2 {
+        font-size: 4em;
+    }
+
+    h3 {
+        font-size: 3em;
+    }
+
+    h4 {
+        font-size: 2.3em;
+    }
+
+    h5 {
+        font-size: 2.0em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
+
+    .registration-category {
+        font-size: 1.7em;
+    }
+}
+
+@media (max-width: 70rem) {
+    h1 {
+        font-size: 2.7em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 2.1em;
+    }
+
+    h4 {
+        font-size: 1.4em;
+    }
+
+    h5 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+
+/***************************
+TEXT STYLING
+***************************/
+h1, h2, h4 {
+    color: white;
+}
+
+h3, h5, p{
+    color: #601414;
+}
+
+p {
+    font-family: OpenSans;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.light {
+    font-weight: 100;
+}
+
+.darkgreen {
+    color: darkgreen;
+}
+
+.lobster {
+    font-family: Lobster;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.white {
+    color: white;
+}
+
+@media (max-width: 70rem) {
+    .blue.border-under70 {
+        border: blue solid 0.1em;
+        padding: 0.3em;
+    }
+
+    .green.border-under70 {
+        border: green solid 0.1em;
+        padding: 0.3em;
+    }
+
+    .red.border-under70 {
+        border: red solid 0.1em;
+        padding: 0.3em;
+    }
+}
+
+
+/***************************
+BUTTON STYLING
+***************************/
+.button {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    padding: 0.5em 2em;
+    font-size: 1.7em;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+    background: var(--button-bg-hover-color);
+    color: var(--button-text-hover-color);
+}
+
+
+.mainbutton {
+    margin: 2em;
+}
+
+@media (min-width: 60rem) {
+    .mainbutton {
+        font-size: 1em;
+        margin: 2em;
+    }
+}
+
+
+/***************************
+TABLE FORMATTING
+***************************/
+@media (min-width: 70rem) {
+
+    .t-grid {
+        display: table;
+        border-collapse: separate;
+        width: 100%;
+    }
+
+    /* The row */
+    .t-grid-row {
+        display: table-row;
+        width: 100%;
+    }
+
+    /* The cell */
+    .t-grid-cell {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    /* Content-column */
+    .t-content {
+        width: 33.33333%;
+    }
+}
